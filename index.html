@@ -23,15 +23,14 @@
             </div>
             
             <div class="input-group checkbox-group">
-                <label>
-                    <input type="checkbox" id="compounding" checked> Use Compounding (Daily)?
-                </label>
+                <input type="checkbox" id="compounding" checked title="Switch between simple and daily compounded interest">
+                <label for="compounding">Use Compounding (Daily)?</label>
             </div>
             
-            <button type="submit">Calculate Rewards</button>
+            <button type="submit">Calculate Rewards (Optional)</button>
         </form>
         
-        <div id="results" class="results hidden">
+        <div id="results" class="results">
             <h2>Your Estimated Rewards</h2>
             <table>
                 <thead>
@@ -41,20 +40,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr id="dailyRow"><td>Daily</td><td id="dailyReward">-</td></tr>
-                    <tr id="weeklyRow"><td>Weekly</td><td id="weeklyReward">-</td></tr>
-                    <tr id="monthlyRow"><td>Monthly</td><td id="monthlyReward">-</td></tr>
-                    <tr id="yearlyRow"><td>Yearly</td><td id="yearlyReward">-</td></tr>
+                    <tr id="dailyRow"><td>Daily</td><td id="dailyReward">0.0000</td></tr>
+                    <tr id="weeklyRow"><td>Weekly</td><td id="weeklyReward">0.0000</td></tr>
+                    <tr id="monthlyRow"><td>Monthly</td><td id="monthlyReward">0.0000</td></tr>
+                    <tr id="yearlyRow"><td>Yearly</td><td id="yearlyReward">0.0000</td></tr>
                 </tbody>
             </table>
-            <p class="note"><em>Note: Rewards = Projected Earnings (Simple or Compounded). For compounding, assumes daily frequency.</em></p>
+            <p class="note"><em>Note: Rewards = Projected Earnings (Simple or Compounded). Updates live as you type/toggle. For compounding, assumes daily frequency.</em></p>
         </div>
 
         <div class="footer">
-            <p>Thank you for using the app! Show some love and follow our developer:</p>
+            <p>If you like this app, give our developer a follow:</p>
             <p><strong>Apexcore</strong><br>
-            <a href="https://warpcast.com/apexnftcore" target="_blank">apexnftcore.farcaster.eth</a><br>
-            <a href="https://base.app/profile/0x46516B72da90192D27a8DA1bf5D2E5506E85472D?tab=posts" target="_blank">View Posts on Base</a></p>
+            <a href="https://base.app/profile/apexnftcore" target="_blank">View Posts on Base</a></p>
         </div>
     </div>
     
