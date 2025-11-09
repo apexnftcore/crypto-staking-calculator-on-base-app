@@ -1,0 +1,15 @@
+{
+  "miniapp": {
+    "name": "Crypto Staking Calculator",
+    "url": "https://apexnftcore.github.io/crypto-staking-calculator-on-base-app/",
+    "description": "Calculate staking rewards on Base.",
+    "iconUrl": "https://apexnftcore.github.io/crypto-staking-calculator-on-base-app/icon.png",
+    "screenshotUrls": [],
+    "category": "tools"
+  },
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  }
+}
