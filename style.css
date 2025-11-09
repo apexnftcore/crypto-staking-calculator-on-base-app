@@ -33,21 +33,21 @@ p {
 .checkbox-group {
     display: flex;
     align-items: center;
-    gap: 8px;  /* Reduced gap for tighter alignment */
+    gap: 8px;
 }
 
 .checkbox-group input[type="checkbox"] {
     width: auto;
     margin: 0;
-    flex-shrink: 0;  /* Prevent checkbox from shrinking */
+    flex-shrink: 0;
 }
 
 .checkbox-group label {
-    margin: 0;  /* Remove margin for inline fit */
+    margin: 0;
     font-weight: normal;
     cursor: pointer;
-    display: inline;  /* Allow inline flow */
-    align-self: center;  /* Center vertically */
+    display: inline;
+    align-self: center;
 }
 
 label {
@@ -99,6 +99,10 @@ th {
     background: #f8f9fa;
 }
 
+.hidden {
+    display: none;
+}
+
 .note {
     font-size: 0.9em;
     color: #666;
@@ -133,6 +137,9 @@ th {
         padding: 20px;
     }
     .checkbox-group {
-        gap: 6px;  /* Smaller gap on mobile */
+        gap: 6px;
+    }
+    table {
+        font-size: 0.9em;
     }
 }
