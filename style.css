@@ -20,19 +20,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;  /* Slightly increased for breathing room */
+    flex-wrap: nowrap;  /* Prevent wrapping on small screens */
     margin-bottom: 10px;
 }
 
 .logo {
     height: 40px;
-    width: auto;
+    width: 40px;
+    flex-shrink: 0;  /* Prevent shrinking */
 }
 
 h1 {
     text-align: center;
     color: #333;
-    margin: 0;  /* Remove default margin for flex alignment */
+    margin: 0;
+    line-height: 1.2;  /* Tighten for vertical alignment with logo */
+    font-size: 1.5em;  /* Consistent sizing */
 }
 
 p {
@@ -156,6 +160,10 @@ th {
         gap: 8px;
     }
     .logo {
-        height: 32px;  /* Smaller on mobile */
+        height: 32px;
+        width: 32px;
+    }
+    h1 {
+        font-size: 1.3em;
     }
 }
