@@ -20,23 +20,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;  /* Slightly increased for breathing room */
-    flex-wrap: nowrap;  /* Prevent wrapping on small screens */
+    gap: 15px;  /* Adjusted for better spacing with PNG */
+    flex-wrap: nowrap;
     margin-bottom: 10px;
 }
 
 .logo {
     height: 40px;
-    width: 40px;
-    flex-shrink: 0;  /* Prevent shrinking */
+    width: auto;
+    object-fit: cover;  /* Ensures PNG crops cleanly if aspect ratio varies */
+    flex-shrink: 0;
 }
 
 h1 {
     text-align: center;
     color: #333;
     margin: 0;
-    line-height: 1.2;  /* Tighten for vertical alignment with logo */
-    font-size: 1.5em;  /* Consistent sizing */
+    line-height: 1.2;
+    font-size: 1.5em;
 }
 
 p {
@@ -157,11 +158,10 @@ th {
         font-size: 0.9em;
     }
     .title-container {
-        gap: 8px;
+        gap: 10px;
     }
     .logo {
         height: 32px;
-        width: 32px;
     }
     h1 {
         font-size: 1.3em;
